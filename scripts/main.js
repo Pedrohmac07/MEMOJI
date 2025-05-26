@@ -5,7 +5,7 @@ const desktopEmojis = [
     "😃",
     "😈",
     "💀",
-    "😇",
+    "🤬",
     "💩",
 ];
 const mobileEmojis = [
@@ -15,6 +15,7 @@ const mobileEmojis = [
     "💀",
     "💩",
     "👻",
+    "🥸",
 ]
 const isMobile = window.innerWidth <= 600;
 const emojis = isMobile ? mobileEmojis : desktopEmojis;
