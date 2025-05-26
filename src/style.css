@@ -102,4 +102,5 @@ button:focus {
 }
 footer > small {
     color: yellow;
+    text-shadow: 1px 0.5px black;
 }
