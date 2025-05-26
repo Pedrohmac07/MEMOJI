@@ -46,10 +46,8 @@ function createCard(emoji) {
             firstCard = card;
         } else {
             if (firstCard.dataset.emoji === card.dataset.emoji) {
-                // Match
                 firstCard = null;
-
-                // Verifica vitória
+ 
                 checkWin();
             } else {
                 lockBoard = true;
@@ -79,7 +77,6 @@ function triggerVictory() {
     const audio = document.getElementById("winSound");
     audio.play();
 
-    // Estoura confetes por 1 segundo
     const duration = 2 * 1000;
     const end = Date.now() + duration;
 
