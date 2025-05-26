@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMOJI</title>
+    <link rel="stylesheet" href="src/style.css">
+
+    <link rel="shortcut icon" href="src/MEMOJIico.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="src/hided.png" alt="">
+        <h1>MEMOJI
+        </h1>       
+    </header>
+
+    <main>
+        <section class="game"></section>
+    </main>
+
+    <footer>
+        <button class="reset" onclick=" window.location.reload()">RESET GAME</button>
+        <br>
+        <small>jogo feito por Pedro Machado!</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <audio id="winSound" src="https://www.soundjay.com/human/sounds/applause-8.mp3"></audio>
+</body>
+</html>

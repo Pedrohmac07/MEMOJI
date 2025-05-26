@@ -1,0 +1,105 @@
+body {
+    height: 100vh;
+    background: #F49BAB;
+    font-family: "Comic Neue", cursive;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+header {
+    background: linear-gradient(325deg, #03001e 0%, #7F55B1 100%);
+    border-bottom: #1f1e1e 2px solid;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding: 20px 0;
+}
+header > img {
+    width: 45px;
+    margin-left: 40px;
+}
+h1 {
+    color: #FFE99A;
+    text-shadow: 2px 2px #f83b3b;
+    margin: 0;
+    margin-left: 50%;
+    transform: translate(-120%);
+}
+
+.game {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    perspective: 1000px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+.card .front,
+.card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    backface-visibility: hidden; /* ESSENCIAL */
+}
+
+.card .front {
+    background: azure;
+    transform: rotateY(180deg); /* "esconde" o front atrás */
+}
+
+.card .back {
+    background: #000;
+    color: #fff;
+    font-size: 2em;
+    opacity: 0.85;
+    transform: rotateY(0deg);
+}
+
+
+footer {
+    margin: 20px;
+    display: block;
+}
+button {
+    font-family: Impact, sans-serif;
+    width: 200px;
+    height: 50px;
+    background-color: #ffe1e0;
+    color: #03001e;
+    border: 2px solid #03001e;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:focus {
+    background-color: #1f1e1e;
+    color: #ffe1e0;
+}
+footer > small {
+    color: yellow;
+}
